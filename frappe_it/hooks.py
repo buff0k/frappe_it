@@ -4,6 +4,16 @@ app_publisher = "buff0k"
 app_description = "IT Management using Frappe and ERPNext"
 app_email = "buff0k@gmail.com"
 app_license = "mit"
+required_apps = ["frappe/erpnext", "frappe/hrms"]
+fixtures = [
+        {"dt": "Role", "filters": [
+            [
+            "name", "in", [
+                    "IT User"
+    		       ]
+                ]
+            ]}
+        ]
 
 # Apps
 # ------------------
