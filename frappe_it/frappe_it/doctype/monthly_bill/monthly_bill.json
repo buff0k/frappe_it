@@ -1,0 +1,410 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{invoice_no}-{user_name}-{YYYY}/{MM}",
+ "creation": "2024-10-11 11:22:09.654953",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "imported_data_section",
+  "account_no",
+  "account_name",
+  "msisdn_no",
+  "sim_card_no",
+  "activation_date",
+  "status",
+  "invoice_no",
+  "user_name",
+  "tariff",
+  "cost_centre",
+  "employee",
+  "sub_po",
+  "cust_po",
+  "subscription",
+  "subscription_discount",
+  "calls_national",
+  "entertainment_services",
+  "direct_provisioning",
+  "calls_international",
+  "calls_roaming",
+  "calls_discount",
+  "calls_data",
+  "calls_data_discount",
+  "calls_messaging",
+  "calls_messaging_discount",
+  "bundles_voice",
+  "bundles_messaging",
+  "bundles_data",
+  "bundles_adhoc",
+  "clip",
+  "blackberry",
+  "itemised_billing",
+  "vodamanage",
+  "look_4_services",
+  "insurance",
+  "equipment",
+  "connection_fee",
+  "connection_fee_discount",
+  "admin_fee",
+  "other",
+  "total",
+  "vat",
+  "grand_total",
+  "control_data_section",
+  "calculated_subtotal",
+  "calculated_vat",
+  "calculated_total",
+  "overspend_amount",
+  "overspend"
+ ],
+ "fields": [
+  {
+   "fieldname": "account_no",
+   "fieldtype": "Data",
+   "label": "Account No"
+  },
+  {
+   "fieldname": "account_name",
+   "fieldtype": "Link",
+   "label": "Account Name",
+   "options": "Company"
+  },
+  {
+   "fieldname": "msisdn_no",
+   "fieldtype": "Data",
+   "label": "MSISDN No"
+  },
+  {
+   "fieldname": "sim_card_no",
+   "fieldtype": "Link",
+   "label": "Sim Card Number",
+   "options": "Simcard Allocations"
+  },
+  {
+   "fieldname": "activation_date",
+   "fieldtype": "Data",
+   "label": "Activation Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "label": "Invoice No"
+  },
+  {
+   "fieldname": "tariff",
+   "fieldtype": "Link",
+   "label": "Tariff",
+   "options": "Cellphone Plan"
+  },
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "User Name"
+  },
+  {
+   "fieldname": "cost_centre",
+   "fieldtype": "Data",
+   "label": "Cost Centre"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Data",
+   "label": "Employee No"
+  },
+  {
+   "fieldname": "sub_po",
+   "fieldtype": "Data",
+   "label": "Sub PO"
+  },
+  {
+   "fieldname": "cust_po",
+   "fieldtype": "Data",
+   "label": "Cust PO"
+  },
+  {
+   "fieldname": "subscription",
+   "fieldtype": "Currency",
+   "label": "Subscription",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "subscription_discount",
+   "fieldtype": "Currency",
+   "label": "Subscription - Discount",
+   "precision": "2"
+  },
+  {
+   "fieldname": "calls_national",
+   "fieldtype": "Currency",
+   "label": "Calls - National",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "entertainment_services",
+   "fieldtype": "Currency",
+   "label": "Entertainment Services",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "direct_provisioning",
+   "fieldtype": "Currency",
+   "label": "Direct Provisioning",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "calls_international",
+   "fieldtype": "Currency",
+   "label": "Calls - International",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "calls_roaming",
+   "fieldtype": "Currency",
+   "label": "Calls - Roaming",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "calls_discount",
+   "fieldtype": "Currency",
+   "label": "Calls - Discount",
+   "precision": "2"
+  },
+  {
+   "fieldname": "calls_data",
+   "fieldtype": "Currency",
+   "label": "Calls - Data",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "calls_data_discount",
+   "fieldtype": "Currency",
+   "label": "Calls - Data Discount",
+   "precision": "2"
+  },
+  {
+   "fieldname": "calls_messaging",
+   "fieldtype": "Currency",
+   "label": "Calls - Messaging",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "calls_messaging_discount",
+   "fieldtype": "Currency",
+   "label": "Calls - Messaging Discount",
+   "precision": "2"
+  },
+  {
+   "fieldname": "bundles_voice",
+   "fieldtype": "Currency",
+   "label": "Bundles - Voice",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "bundles_messaging",
+   "fieldtype": "Currency",
+   "label": "Bundles - Messaging",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "bundles_data",
+   "fieldtype": "Currency",
+   "label": "Bundles - Data",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "bundles_adhoc",
+   "fieldtype": "Currency",
+   "label": "Bundles - Adhoc",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "clip",
+   "fieldtype": "Currency",
+   "label": "CLIP",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "blackberry",
+   "fieldtype": "Currency",
+   "label": "Blackberry",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "itemised_billing",
+   "fieldtype": "Currency",
+   "label": "Itemised Billing",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "imported_data_section",
+   "fieldtype": "Section Break",
+   "label": "Imported Data"
+  },
+  {
+   "fieldname": "vodamanage",
+   "fieldtype": "Currency",
+   "label": "Vodamanage",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "look_4_services",
+   "fieldtype": "Currency",
+   "label": "Look 4 Services",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "insurance",
+   "fieldtype": "Currency",
+   "label": "Insurance",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "equipment",
+   "fieldtype": "Currency",
+   "label": "Equipment",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "connection_fee",
+   "fieldtype": "Currency",
+   "label": "Connection Fee",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "connection_fee_discount",
+   "fieldtype": "Currency",
+   "label": "Connection Fee - Discount",
+   "precision": "2"
+  },
+  {
+   "fieldname": "admin_fee",
+   "fieldtype": "Currency",
+   "label": "Admin Fee",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "other",
+   "fieldtype": "Currency",
+   "label": "Other",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "vat",
+   "fieldtype": "Currency",
+   "label": "VAT",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "control_data_section",
+   "fieldtype": "Section Break",
+   "label": "Control Data"
+  },
+  {
+   "fieldname": "calculated_subtotal",
+   "fieldtype": "Currency",
+   "label": "Calculated Subtotal",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "calculated_vat",
+   "fieldtype": "Currency",
+   "label": "Calculated VAT",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "calculated_total",
+   "fieldtype": "Currency",
+   "label": "Calculated Total",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "overspend_amount",
+   "fieldtype": "Currency",
+   "label": "Overspend Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "overspend",
+   "fieldtype": "Check",
+   "label": "Overspent",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-11 14:19:58.415593",
+ "modified_by": "Administrator",
+ "module": "Frappe IT",
+ "name": "Monthly Bill",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
