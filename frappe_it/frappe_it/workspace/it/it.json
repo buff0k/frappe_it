@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"WXOsjMQWuk\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">IT</span>\",\"col\":12}},{\"id\":\"RtNNYmhyfJ\",\"type\":\"card\",\"data\":{\"card_name\":\"Cellphones\",\"col\":4}}]",
+ "content": "[{\"id\":\"WXOsjMQWuk\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">IT</span>\",\"col\":12}},{\"id\":\"RtNNYmhyfJ\",\"type\":\"card\",\"data\":{\"card_name\":\"Cellphones\",\"col\":4}},{\"id\":\"aJ_46UYmF7\",\"type\":\"card\",\"data\":{\"card_name\":\"Printers\",\"col\":4}},{\"id\":\"RHuIwKUvfi\",\"type\":\"card\",\"data\":{\"card_name\":\"Asset Maintenance\",\"col\":4}}]",
  "creation": "2024-10-11 11:13:49.828811",
  "custom_blocks": [],
  "docstatus": 0,
@@ -61,9 +61,67 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Printers",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Printer Allocation",
+   "link_count": 0,
+   "link_to": "Printer Allocation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Maintenance",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset",
+   "link_count": 0,
+   "link_to": "Asset",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Supplier",
+   "link_count": 0,
+   "link_to": "Supplier",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2024-10-11 15:47:26.340552",
+ "modified": "2024-10-13 22:04:36.482724",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "IT",
