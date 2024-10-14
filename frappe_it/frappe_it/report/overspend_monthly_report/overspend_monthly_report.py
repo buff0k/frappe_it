@@ -13,10 +13,11 @@ def execute(filters=None):
     columns = [
         {"label": "Monthly Bill", "fieldname": "name", "fieldtype": "Link", "options": "Monthly Bill", "width": 100},
         {"label": "SIM Card No", "fieldname": "sim_card_no", "fieldtype": "Link", "options": "Simcard Allocations", "width": 100},
-        {"label": "Telephone Number", "fieldname": "tel_no", "fieldtype": "Data", "width": 130},
+        {"label": "Telephone Number", "fieldname": "tel_no", "fieldtype": "Data", "width": 145},
         {"label": "Employee", "fieldname": "employee", "fieldtype": "Link", "options": "Employee", "width": 80},
         {"label": "Employee Name", "fieldname": "employee_name", "fieldtype": "Data", "width": 150},
-        {"label": "Overspend Amount", "fieldname": "overspend_amount", "fieldtype": "Currency", "width": 100}
+        {"label": "Notes", "fieldname": "notes", "fieldtype": "Small Text", "width": 250},
+        {"label": "Overspend Amount", "fieldname": "overspend_amount", "fieldtype": "Data", "width": 100}
     ]
 
     conditions = "where b.overspend = 1"
@@ -30,6 +31,7 @@ def execute(filters=None):
             b.sim_card_no, 
             s.tel_no,  -- Fetching tel_no from Simcard Allocations
             s.employee,  -- Fetching employee from Simcard Allocations
+            s.notes, -- Fetching notes from Simcard Allocations
             e.employee_name, 
             b.overspend_amount
         from `tabMonthly Bill` b

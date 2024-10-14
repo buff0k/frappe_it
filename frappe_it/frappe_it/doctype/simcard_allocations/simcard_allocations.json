@@ -12,7 +12,8 @@
   "tel_no",
   "employee",
   "employee_name",
-  "end_date"
+  "end_date",
+  "notes"
  ],
  "fields": [
   {
@@ -55,11 +56,17 @@
    "in_standard_filter": 1,
    "label": "Employee Name",
    "search_index": 1
+  },
+  {
+   "description": "Including details about simcards allocated to general site use.",
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-11 17:24:34.195447",
+ "modified": "2024-10-14 17:02:17.061698",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Simcard Allocations",
