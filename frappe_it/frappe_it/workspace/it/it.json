@@ -16,55 +16,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Cellphones",
-   "link_count": 4,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Cellphone Plan",
-   "link_count": 0,
-   "link_to": "Cellphone Plan",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Monthly Bill",
-   "link_count": 0,
-   "link_to": "Monthly Bill",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Simcard Allocations",
-   "link_count": 0,
-   "link_to": "Simcard Allocations",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Overspend Monthly Report",
-   "link_count": 0,
-   "link_to": "Overspend Monthly Report",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Printers",
    "link_count": 1,
    "link_type": "DocType",
@@ -119,9 +70,68 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cellphones",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cellphone Plan",
+   "link_count": 0,
+   "link_to": "Cellphone Plan",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Monthly Bill",
+   "link_count": 0,
+   "link_to": "Monthly Bill",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Simcard Allocations",
+   "link_count": 0,
+   "link_to": "Simcard Allocations",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Overspend Monthly Report",
+   "link_count": 0,
+   "link_to": "Overspend Monthly Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Contract Expiry Report",
+   "link_count": 0,
+   "link_to": "Contract Expiry Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2024-10-13 22:04:36.482724",
+ "modified": "2024-10-14 11:43:54.827637",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "IT",
