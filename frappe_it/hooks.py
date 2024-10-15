@@ -12,6 +12,13 @@ fixtures = [
                     "IT User"
     		       ]
                 ]
+            ]},
+        {"dt": "Custom DocPerm", "filters": [
+            [
+            "role", "in", [
+                    "IT User"
+    		       ]
+                ]
             ]}
         ]
 
