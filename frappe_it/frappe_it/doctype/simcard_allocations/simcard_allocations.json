@@ -12,14 +12,17 @@
   "tel_no",
   "employee",
   "employee_name",
+  "start_date",
   "end_date",
   "notes"
  ],
  "fields": [
   {
    "fieldname": "sim_no",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Sim Card Number",
+   "link_filters": "[[\"Asset\",\"asset_category\",\"=\",\"Cellphone Simcards\"]]",
+   "options": "Asset",
    "reqd": 1,
    "unique": 1
   },
@@ -62,11 +65,17 @@
    "fieldname": "notes",
    "fieldtype": "Small Text",
    "label": "Notes"
+  },
+  {
+   "fetch_from": "sim_no.purchase_date",
+   "fieldname": "start_date",
+   "fieldtype": "Read Only",
+   "label": "Contract Start Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-14 17:02:17.061698",
+ "modified": "2024-10-17 10:02:02.913653",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Simcard Allocations",

@@ -10,11 +10,12 @@ def execute(filters=None):
 
     # Prepare the columns for the report
     columns = [
-        {"label": "SIM Number", "fieldname": "sim_no", "fieldtype": "Data", "width": 120},
+        {"label": "SIM Number", "fieldname": "sim_no", "fieldtype": "Link", "options": "Simcard Allocations", "width": 205},
         {"label": "Telephone Number", "fieldname": "tel_no", "fieldtype": "Phone", "width": 145},
         {"label": "Employee", "fieldname": "employee", "fieldtype": "Link", "options": "Employee", "width": 120},
         {"label": "Employee Name", "fieldname": "employee_name", "fieldtype": "Data", "width": 120},
         {"label": "Notes", "fieldname": "notes", "fieldtype": "Small Text", "width": 200},
+        {"label": "Start Date", "fieldname": "end_date", "fieldtype": "Date", "width": 120},
         {"label": "End Date", "fieldname": "end_date", "fieldtype": "Date", "width": 120}
     ]
 
@@ -32,6 +33,7 @@ def execute(filters=None):
             s.employee, 
             e.employee_name, 
             s.notes,
+            s.start_date,
             s.end_date
         from `tabSimcard Allocations` s
         left join `tabEmployee` e on s.employee = e.name 
