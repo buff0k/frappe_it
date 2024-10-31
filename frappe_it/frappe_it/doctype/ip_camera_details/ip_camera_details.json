@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:asset",
+ "creation": "2024-10-29 10:22:58.911646",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "asset",
+  "linked_to_nvr",
+  "ip_address",
+  "username",
+  "location",
+  "firmware_update",
+  "column_break_qbqf",
+  "make",
+  "model",
+  "serial",
+  "password",
+  "camera_link",
+  "mac_address"
+ ],
+ "fields": [
+  {
+   "fieldname": "asset",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Camera",
+   "link_filters": "[[\"Asset\",\"asset_category\",\"=\",\"IP Cameras\"]]",
+   "options": "Asset",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "asset.item_code",
+   "fieldname": "model",
+   "fieldtype": "Link",
+   "label": "Model",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "model.brand",
+   "fieldname": "make",
+   "fieldtype": "Link",
+   "label": "Make",
+   "options": "Brand",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ip_address",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "IP Address",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Username",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Password",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "Camera Location",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "serial",
+   "fieldtype": "Data",
+   "label": "Serial No.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "firmware_update",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Last Firmware Update",
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_qbqf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "linked_to_nvr",
+   "fieldtype": "Link",
+   "label": "Linked to NVR",
+   "options": "NVR Details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mac_address",
+   "fieldtype": "Data",
+   "label": "MAC Address"
+  },
+  {
+   "fieldname": "camera_link",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Camera Link",
+   "options": "URL",
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-31 07:41:06.338601",
+ "modified_by": "Administrator",
+ "module": "Frappe IT",
+ "name": "IP Camera Details",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "IT User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

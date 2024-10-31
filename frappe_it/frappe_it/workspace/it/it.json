@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"WXOsjMQWuk\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">IT</span>\",\"col\":12}},{\"id\":\"RtNNYmhyfJ\",\"type\":\"card\",\"data\":{\"card_name\":\"Cellphones\",\"col\":4}},{\"id\":\"aJ_46UYmF7\",\"type\":\"card\",\"data\":{\"card_name\":\"Printers\",\"col\":4}},{\"id\":\"RHuIwKUvfi\",\"type\":\"card\",\"data\":{\"card_name\":\"Asset Maintenance\",\"col\":4}}]",
+ "content": "[{\"id\":\"WXOsjMQWuk\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">IT</span>\",\"col\":12}},{\"id\":\"RtNNYmhyfJ\",\"type\":\"card\",\"data\":{\"card_name\":\"Cellphones\",\"col\":4}},{\"id\":\"DfjQLJjZra\",\"type\":\"card\",\"data\":{\"card_name\":\"CCTV\",\"col\":4}},{\"id\":\"aJ_46UYmF7\",\"type\":\"card\",\"data\":{\"card_name\":\"Printers\",\"col\":4}},{\"id\":\"RHuIwKUvfi\",\"type\":\"card\",\"data\":{\"card_name\":\"Asset Maintenance\",\"col\":4}}]",
  "creation": "2024-10-11 11:13:49.828811",
  "custom_blocks": [],
  "docstatus": 0,
@@ -129,9 +129,38 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "CCTV",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "NVR Details",
+   "link_count": 0,
+   "link_to": "NVR Details",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "IP Camera Details",
+   "link_count": 0,
+   "link_to": "IP Camera Details",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2024-10-14 11:43:54.827637",
+ "modified": "2024-10-29 13:53:33.660496",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "IT",
