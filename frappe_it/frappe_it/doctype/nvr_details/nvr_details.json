@@ -20,6 +20,8 @@
   "password",
   "serial",
   "device_url",
+  "section_break_rsfc",
+  "notes",
   "section_break_qeuu",
   "linked_cameras"
  ],
@@ -115,11 +117,20 @@
    "fieldname": "mac_address",
    "fieldtype": "Data",
    "label": "MAC Address"
+  },
+  {
+   "fieldname": "section_break_rsfc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-31 09:48:21.906408",
+ "modified": "2024-11-01 08:23:52.468213",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "NVR Details",

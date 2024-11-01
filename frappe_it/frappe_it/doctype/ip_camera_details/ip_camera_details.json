@@ -19,7 +19,9 @@
   "serial",
   "password",
   "camera_link",
-  "mac_address"
+  "mac_address",
+  "section_break_qfvk",
+  "notes"
  ],
  "fields": [
   {
@@ -119,11 +121,20 @@
    "options": "URL",
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "section_break_qfvk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-31 07:41:06.338601",
+ "modified": "2024-11-01 08:24:15.549758",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "IP Camera Details",
