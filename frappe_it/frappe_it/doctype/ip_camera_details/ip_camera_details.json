@@ -57,7 +57,7 @@
    "in_list_view": 1,
    "label": "IP Address",
    "reqd": 1,
-   "search_index": 1
+   "unique": 1
   },
   {
    "fieldname": "username",
@@ -88,7 +88,8 @@
    "fieldname": "serial",
    "fieldtype": "Data",
    "label": "Serial No.",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "firmware_update",
@@ -111,7 +112,8 @@
   {
    "fieldname": "mac_address",
    "fieldtype": "Data",
-   "label": "MAC Address"
+   "label": "MAC Address",
+   "unique": 1
   },
   {
    "fieldname": "camera_link",
@@ -134,7 +136,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-01 08:24:15.549758",
+ "modified": "2024-11-01 10:58:28.358280",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "IP Camera Details",

@@ -40,7 +40,8 @@
    "fieldname": "ip_address",
    "fieldtype": "Data",
    "label": "IP Address",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "username",
@@ -92,7 +93,8 @@
    "fieldname": "serial",
    "fieldtype": "Data",
    "label": "Serial No.",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "device_url",
@@ -116,7 +118,8 @@
   {
    "fieldname": "mac_address",
    "fieldtype": "Data",
-   "label": "MAC Address"
+   "label": "MAC Address",
+   "unique": 1
   },
   {
    "fieldname": "section_break_rsfc",
@@ -130,7 +133,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-01 08:23:52.468213",
+ "modified": "2024-11-01 10:58:46.815201",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "NVR Details",
