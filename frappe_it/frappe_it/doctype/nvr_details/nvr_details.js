@@ -4,10 +4,11 @@
 frappe.ui.form.on("NVR Details", {
     refresh: function(frm) {
         if (!frm.is_new()) {
-            // Fetch IP Camera Details directly on the client side
+            // Fetch all IP Camera Details directly on the client side
             frappe.db.get_list('IP Camera Details', {
                 filters: { 'linked_to_nvr': frm.doc.name },
-                fields: ['name as camera', 'ip_address', 'location', 'camera_link', 'username', 'password']
+                fields: ['name as camera', 'ip_address', 'location', 'camera_link', 'username', 'password'],
+                limit: null // Set limit to null to fetch all records
             }).then((cameras) => {
                 frm.clear_table("linked_cameras");
                 cameras.forEach((camera_data) => {
