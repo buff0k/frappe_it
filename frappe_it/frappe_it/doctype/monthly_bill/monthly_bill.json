@@ -54,10 +54,13 @@
   "grand_total",
   "control_data_section",
   "calculated_subtotal",
-  "calculated_vat",
   "calculated_total",
+  "inv_file",
+  "overspend",
+  "column_break_kjlk",
+  "calculated_vat",
   "overspend_amount",
-  "overspend"
+  "itm_file"
  ],
  "fields": [
   {
@@ -380,11 +383,25 @@
    "fieldtype": "Check",
    "label": "Overspent",
    "read_only": 1
+  },
+  {
+   "fieldname": "inv_file",
+   "fieldtype": "Attach",
+   "label": "Invoice"
+  },
+  {
+   "fieldname": "column_break_kjlk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "itm_file",
+   "fieldtype": "Attach",
+   "label": "Itemized Bill"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-11 17:24:20.971621",
+ "modified": "2024-11-13 07:58:11.558930",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Monthly Bill",
