@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "RAD.####",
+ "creation": "2024-11-18 10:50:24.460290",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "asset",
+  "brand",
+  "purchase_date",
+  "employee",
+  "vehicle",
+  "column_break_szgz",
+  "location",
+  "item",
+  "serial",
+  "employee_name",
+  "vehicle_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "asset",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Asset",
+   "link_filters": "[[\"Asset\",\"asset_category\",\"in\",[\"Handheld Radio\",\"Vehicle Mounted Radio\"]]]",
+   "options": "Asset",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_szgz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item.brand",
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "label": "Make",
+   "options": "Brand",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "asset.item_code",
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Model",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Allocated to Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Allocated to Vehicle",
+   "options": "Asset"
+  },
+  {
+   "fieldname": "serial",
+   "fieldtype": "Data",
+   "label": "Serial Number",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "asset.purchase_date",
+   "fieldname": "purchase_date",
+   "fieldtype": "Date",
+   "label": "Purchase Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle.item_name",
+   "fieldname": "vehicle_description",
+   "fieldtype": "Data",
+   "label": "Vehicle Description",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-18 13:25:36.703048",
+ "modified_by": "Administrator",
+ "module": "Frappe IT",
+ "name": "Radio Allocation",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "IT User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
