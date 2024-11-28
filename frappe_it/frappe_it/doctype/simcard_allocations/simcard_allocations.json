@@ -10,10 +10,13 @@
  "field_order": [
   "sim_no",
   "tel_no",
+  "msisdn",
+  "column_break_qhwv",
   "employee",
   "employee_name",
   "start_date",
   "end_date",
+  "section_break_ksso",
   "notes"
  ],
  "fields": [
@@ -71,11 +74,25 @@
    "fieldname": "start_date",
    "fieldtype": "Read Only",
    "label": "Contract Start Date"
+  },
+  {
+   "fieldname": "msisdn",
+   "fieldtype": "Data",
+   "label": "MSISDN Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qhwv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ksso",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-17 10:02:02.913653",
+ "modified": "2024-11-27 12:22:26.542160",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Simcard Allocations",
