@@ -11,13 +11,17 @@
   "sim_no",
   "tel_no",
   "msisdn",
+  "branch",
+  "sim_status",
   "column_break_qhwv",
   "employee",
   "employee_name",
   "start_date",
   "end_date",
+  "replacement",
   "section_break_ksso",
-  "notes"
+  "notes",
+  "simcard_allocations"
  ],
  "fields": [
   {
@@ -55,12 +59,12 @@
    "search_index": 1
   },
   {
-   "fetch_from": "employee.employee_name",
    "fieldname": "employee_name",
    "fieldtype": "Read Only",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Employee Name",
+   "read_only": 1,
    "search_index": 1
   },
   {
@@ -88,11 +92,41 @@
   {
    "fieldname": "section_break_ksso",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Site",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "simcard_allocations",
+   "fieldtype": "Table",
+   "is_virtual": 1,
+   "label": "Linked Bills",
+   "options": "Simcard Bills"
+  },
+  {
+   "fieldname": "sim_status",
+   "fieldtype": "Select",
+   "label": "Simcard Status",
+   "options": "Active\nReplaced\nLost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "replacement",
+   "fieldtype": "Link",
+   "label": "Replacement Sim Card",
+   "link_filters": "[[\"Asset\",\"asset_category\",\"=\",\"Cellphone Simcards\"]]",
+   "options": "Asset"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-27 12:22:26.542160",
+ "modified": "2024-12-06 11:41:23.439860",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Simcard Allocations",

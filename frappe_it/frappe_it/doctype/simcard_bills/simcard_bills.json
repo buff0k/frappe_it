@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-02 09:15:04.575170",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "monthly_bill",
+  "total",
+  "overspend_amount"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "monthly_bill",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Linked Bill",
+   "options": "Monthly Bill",
+   "search_index": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total (Excl. VAT)",
+   "precision": "2",
+   "search_index": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "overspend_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Overspend Amount",
+   "precision": "2",
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-02 09:54:04.813882",
+ "modified_by": "Administrator",
+ "module": "Frappe IT",
+ "name": "Simcard Bills",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
