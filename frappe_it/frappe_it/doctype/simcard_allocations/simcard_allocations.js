@@ -9,20 +9,18 @@ frappe.ui.form.on('Simcard Allocations', {
         frm.trigger('populate_child_table');
     },
     employee: function (frm) {
-        console.log('Selected employee:', frm.doc.employee); // Debug log to check employee field value
         if (frm.doc.employee) {
             // Fetch employee details from the Employee DocType
             frappe.db.get_doc('Employee', frm.doc.employee)
                 .then(employee_doc => {
                     if (employee_doc) {
-                        console.log('Employee fetched:', employee_doc); // Debug log
                         // Update the fields with the fetched data
                         frm.set_value('employee_name', employee_doc.employee_name);
                         frm.set_value('branch', employee_doc.branch);
                     }
                 })
                 .catch(error => {
-                    console.error('Error fetching employee:', error); // Debug log
+                    console.error('Error fetching employee:', error); // Handle any error fetching the employee
                 });
         } else {
             // Clear the fields if employee is not selected
@@ -59,14 +57,10 @@ frappe.ui.form.on('Simcard Allocations', {
 
                         // Refresh the table to display the new data
                         frm.refresh_field('simcard_allocations');
-
-                        // Mark the form as not dirty (prevents "Not Saved" message)
-                        frm.set_dirty(false); // Corrected line
                     } else {
                         // Clear the child table if no matching records are found
                         frm.clear_table('simcard_allocations');
                         frm.refresh_field('simcard_allocations');
-                        frm.set_dirty(false); // Corrected line
                     }
                 }
             });
@@ -74,7 +68,6 @@ frappe.ui.form.on('Simcard Allocations', {
             // Clear the table if sim_no is empty
             frm.clear_table('simcard_allocations');
             frm.refresh_field('simcard_allocations');
-            frm.set_dirty(false); // Corrected line
         }
     }
 });
