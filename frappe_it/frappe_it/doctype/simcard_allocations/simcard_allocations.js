@@ -5,7 +5,7 @@ frappe.ui.form.on('Simcard Allocations', {
     onload: function (frm) {
         frm.trigger('populate_child_table');
     },
-    sim_no: function (frm) {
+    msisdn: function (frm) {
         frm.trigger('populate_child_table');
     },
     employee: function (frm) {
@@ -29,16 +29,16 @@ frappe.ui.form.on('Simcard Allocations', {
         }
     },
     populate_child_table: function (frm) {
-        if (frm.doc.sim_no) {
+        if (frm.doc.msisdn) {
             frappe.call({
                 method: 'frappe.client.get_list',
                 args: {
                     doctype: 'Monthly Bill',
                     fields: ['name', 'total', 'overspend_amount'],
                     filters: {
-                        sim_card_no: frm.doc.sim_no
+                        msisdn_no: frm.doc.msisdn
                     },
-                    limit_page_length: 0 // Fetch all matching records
+                    limit_page_length: 0
                 },
                 callback: function (response) {
                     if (response && response.message) {
