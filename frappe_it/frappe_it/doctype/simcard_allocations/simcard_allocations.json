@@ -74,9 +74,8 @@
    "label": "Notes"
   },
   {
-   "fetch_from": "sim_no.purchase_date",
    "fieldname": "start_date",
-   "fieldtype": "Read Only",
+   "fieldtype": "Date",
    "label": "Contract Start Date"
   },
   {
@@ -126,7 +125,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-06 11:59:33.553111",
+ "modified": "2024-12-09 16:21:38.161271",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Simcard Allocations",
