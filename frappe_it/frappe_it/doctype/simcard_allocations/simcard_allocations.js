@@ -3,6 +3,7 @@
 
 frappe.ui.form.on('Simcard Allocations', {
     onload: function (frm) {
+        frm.trigger('set_sim_no_query');
         frm.trigger('populate_child_table');
     },
     msisdn: function (frm) {
@@ -69,5 +70,14 @@ frappe.ui.form.on('Simcard Allocations', {
             frm.clear_table('simcard_allocations');
             frm.refresh_field('simcard_allocations');
         }
+    },
+    set_sim_no_query: function (frm) {
+        console.log("Setting query for sim_no");
+        frm.set_query('sim_no', function () {
+            return {
+                query: 'frappe_it.frappe_it.doctype.simcard_allocations.simcard_allocations.get_available_simcards',
+                filters: {}
+            };
+        });
     }
 });

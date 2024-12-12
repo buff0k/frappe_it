@@ -28,7 +28,6 @@
    "fieldname": "sim_no",
    "fieldtype": "Link",
    "label": "Sim Card Number",
-   "link_filters": "[[\"Asset\",\"asset_category\",\"=\",\"Cellphone Simcards\"]]",
    "options": "Asset",
    "reqd": 1,
    "unique": 1
@@ -125,7 +124,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-09 16:21:38.161271",
+ "modified": "2024-12-12 13:36:27.216135",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Simcard Allocations",
