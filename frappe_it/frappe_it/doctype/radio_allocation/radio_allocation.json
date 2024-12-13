@@ -2,7 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "RAD.####",
+ "autoname": "format:{item}-{asset}",
  "creation": "2024-11-18 10:50:24.460290",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -27,7 +27,8 @@
    "label": "Asset",
    "link_filters": "[[\"Asset\",\"asset_category\",\"in\",[\"Handheld Radio\",\"Vehicle Mounted Radio\"]]]",
    "options": "Asset",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "column_break_szgz",
@@ -99,11 +100,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-18 13:25:36.703048",
+ "modified": "2024-12-13 08:40:26.472770",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Radio Allocation",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
