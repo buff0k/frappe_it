@@ -8,7 +8,7 @@ frappe.ui.form.on("NVR Details", {
             frappe.db.get_list('IP Camera Details', {
                 filters: { 'linked_to_nvr': frm.doc.name },
                 fields: ['name as camera', 'ip_address', 'location', 'camera_link', 'username', 'password'],
-                limit: null // Set limit to null to fetch all records
+                limit_page_length: 1000 // Set a large enough limit or manage pagination
             }).then((cameras) => {
                 frm.clear_table("linked_cameras");
                 cameras.forEach((camera_data) => {
