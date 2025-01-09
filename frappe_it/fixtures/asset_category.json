@@ -1,0 +1,137 @@
+[
+ {
+  "accounts": [
+   {
+    "accumulated_depreciation_account": null,
+    "capital_work_in_progress_account": null,
+    "company_name": "Isambane Mining (Pty) Ltd",
+    "depreciation_expense_account": null,
+    "fixed_asset_account": "Softwares - ISA",
+    "parent": "IP Cameras",
+    "parentfield": "accounts",
+    "parenttype": "Asset Category"
+   }
+  ],
+  "asset_category_name": "IP Cameras",
+  "docstatus": 0,
+  "doctype": "Asset Category",
+  "enable_cwip_accounting": 0,
+  "finance_books": [],
+  "modified": "2024-10-29 11:38:23.802345",
+  "name": "IP Cameras"
+ },
+ {
+  "accounts": [
+   {
+    "accumulated_depreciation_account": null,
+    "capital_work_in_progress_account": null,
+    "company_name": "Isambane Mining (Pty) Ltd",
+    "depreciation_expense_account": null,
+    "fixed_asset_account": "Softwares - ISA",
+    "parent": "NVRs",
+    "parentfield": "accounts",
+    "parenttype": "Asset Category"
+   }
+  ],
+  "asset_category_name": "NVRs",
+  "docstatus": 0,
+  "doctype": "Asset Category",
+  "enable_cwip_accounting": 0,
+  "finance_books": [],
+  "modified": "2024-10-29 11:38:24.169231",
+  "name": "NVRs"
+ },
+ {
+  "accounts": [
+   {
+    "accumulated_depreciation_account": "Accumulated Depreciation - ISA",
+    "capital_work_in_progress_account": null,
+    "company_name": "Isambane Mining (Pty) Ltd",
+    "depreciation_expense_account": "Depreciation - ISA",
+    "fixed_asset_account": "Electronic Equipments - ISA",
+    "parent": "Handheld Radio",
+    "parentfield": "accounts",
+    "parenttype": "Asset Category"
+   },
+   {
+    "accumulated_depreciation_account": "Accumulated Depreciation - EX",
+    "capital_work_in_progress_account": null,
+    "company_name": "Excavo Mining (Pty) Ltd",
+    "depreciation_expense_account": "Depreciation - EX",
+    "fixed_asset_account": "Electronic Equipments - EX",
+    "parent": "Handheld Radio",
+    "parentfield": "accounts",
+    "parenttype": "Asset Category"
+   }
+  ],
+  "asset_category_name": "Handheld Radio",
+  "docstatus": 0,
+  "doctype": "Asset Category",
+  "enable_cwip_accounting": 0,
+  "finance_books": [],
+  "modified": "2024-11-18 12:56:32.867171",
+  "name": "Handheld Radio"
+ },
+ {
+  "accounts": [
+   {
+    "accumulated_depreciation_account": "Accumulated Depreciation - ISA",
+    "capital_work_in_progress_account": null,
+    "company_name": "Isambane Mining (Pty) Ltd",
+    "depreciation_expense_account": "Depreciation - ISA",
+    "fixed_asset_account": "Electronic Equipments - ISA",
+    "parent": "Vehicle Mounted Radio",
+    "parentfield": "accounts",
+    "parenttype": "Asset Category"
+   },
+   {
+    "accumulated_depreciation_account": "Accumulated Depreciation - EX",
+    "capital_work_in_progress_account": null,
+    "company_name": "Excavo Mining (Pty) Ltd",
+    "depreciation_expense_account": "Depreciation - EX",
+    "fixed_asset_account": "Electronic Equipments - EX",
+    "parent": "Vehicle Mounted Radio",
+    "parentfield": "accounts",
+    "parenttype": "Asset Category"
+   }
+  ],
+  "asset_category_name": "Vehicle Mounted Radio",
+  "docstatus": 0,
+  "doctype": "Asset Category",
+  "enable_cwip_accounting": 0,
+  "finance_books": [],
+  "modified": "2024-11-18 12:57:02.807778",
+  "name": "Vehicle Mounted Radio"
+ },
+ {
+  "accounts": [
+   {
+    "accumulated_depreciation_account": null,
+    "capital_work_in_progress_account": null,
+    "company_name": "Isambane Mining (Pty) Ltd",
+    "depreciation_expense_account": null,
+    "fixed_asset_account": "Electronic Equipments - ISA",
+    "parent": "Cellphone Simcards",
+    "parentfield": "accounts",
+    "parenttype": "Asset Category"
+   },
+   {
+    "accumulated_depreciation_account": "",
+    "capital_work_in_progress_account": null,
+    "company_name": "Excavo Mining (Pty) Ltd",
+    "depreciation_expense_account": "",
+    "fixed_asset_account": "Electronic Equipments - EX",
+    "parent": "Cellphone Simcards",
+    "parentfield": "accounts",
+    "parenttype": "Asset Category"
+   }
+  ],
+  "asset_category_name": "Cellphone Simcards",
+  "docstatus": 0,
+  "doctype": "Asset Category",
+  "enable_cwip_accounting": 0,
+  "finance_books": [],
+  "modified": "2024-10-17 09:06:15.161508",
+  "name": "Cellphone Simcards"
+ }
+]

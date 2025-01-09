@@ -6,20 +6,10 @@ app_email = "buff0k@gmail.com"
 app_license = "mit"
 required_apps = ["frappe/erpnext", "frappe/hrms"]
 fixtures = [
-        {"dt": "Role", "filters": [
-            [
-            "name", "in", [
-                    "IT User"
-    		       ]
-                ]
-            ]},
-        {"dt": "Custom DocPerm", "filters": [
-            [
-            "role", "in", [
-                    "IT User"
-    		       ]
-                ]
-            ]}
+        {"dt": "Role", "filters": [["name", "in", ["IT User"]]]},
+        {"dt": "Custom DocPerm", "filters": [["role", "in", ["IT User"]]]},
+        {"dt": "Asset Category", "filters": [["name", "in", ["Cellphone Simcards", "Handheld Radio", "IP Cameras", "NVRs", "Vehicle Mounted Radio"]]]},
+        {"dt": "Item Group", "filters": [["name", "in", ["Cellphone Simcards", "Handheld Radio", "IP Cameras", "NVRs", "Vehicle Mounted Radio"]]]}
         ]
 
 # Apps
