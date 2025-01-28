@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:{employee_or_asset}",
+ "creation": "2025-01-28 10:38:43.480176",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "branch_or_location",
+  "allocated_to_section",
+  "employee_or_asset",
+  "allocated_to",
+  "column_break_idmf",
+  "employee_asset_name",
+  "site",
+  "allocated_assets_section",
+  "list_of_allocated_assets"
+ ],
+ "fields": [
+  {
+   "fieldname": "allocated_to_section",
+   "fieldtype": "Section Break",
+   "label": "Allocated To"
+  },
+  {
+   "fieldname": "column_break_idmf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "allocated_to",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Employee / Plant Number",
+   "options": "employee_or_asset",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_asset_name",
+   "fieldtype": "Data",
+   "label": "Employee or Plant Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "branch_or_location",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "ignore_user_permissions": 1,
+   "label": "Branch or Location",
+   "link_filters": "[[\"DocType\",\"name\",\"in\",[\"Branch\",\"Location\"]]]",
+   "options": "DocType",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_or_asset",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Employee or Asset",
+   "link_filters": "[[\"DocType\",\"name\",\"in\",[\"Employee\",\"Asset\"]]]",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Dynamic Link",
+   "label": "Alocated Site",
+   "options": "branch_or_location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "allocated_assets_section",
+   "fieldtype": "Section Break",
+   "label": "Allocated Assets"
+  },
+  {
+   "fieldname": "list_of_allocated_assets",
+   "fieldtype": "Table",
+   "label": "List of Allocated Assets",
+   "options": "Asset Allocation Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-28 12:23:34.340549",
+ "modified_by": "Administrator",
+ "module": "Frappe IT",
+ "name": "Asset Allocation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "IT User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
