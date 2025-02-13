@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_import": 1,
- "autoname": "format:{employee_or_asset}",
+ "autoname": "format:{employee_asset_name}",
  "creation": "2025-01-28 10:38:43.480176",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -30,6 +30,7 @@
    "fieldname": "allocated_to",
    "fieldtype": "Dynamic Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Employee / Plant Number",
    "options": "employee_or_asset",
    "reqd": 1
@@ -61,6 +62,8 @@
   {
    "fieldname": "site",
    "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Alocated Site",
    "options": "branch_or_location",
    "read_only": 1
@@ -79,7 +82,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-28 12:23:34.340549",
+ "modified": "2025-02-13 14:43:50.840445",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Asset Allocation",

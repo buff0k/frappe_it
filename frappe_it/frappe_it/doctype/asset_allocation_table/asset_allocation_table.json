@@ -24,17 +24,21 @@
   {
    "fieldname": "asset_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Asset Description",
    "read_only": 1
   },
   {
    "fieldname": "check_out_date",
    "fieldtype": "Date",
-   "label": "Check-Out Date"
+   "in_list_view": 1,
+   "label": "Check-Out Date",
+   "reqd": 1
   },
   {
    "fieldname": "condition_photo",
    "fieldtype": "Attach",
+   "in_list_view": 1,
    "label": "Condition Photo"
   },
   {
@@ -46,7 +50,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-01-28 12:22:36.913129",
+ "modified": "2025-02-13 14:34:42.326437",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Asset Allocation Table",

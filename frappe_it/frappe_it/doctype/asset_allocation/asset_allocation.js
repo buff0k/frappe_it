@@ -61,3 +61,27 @@ frappe.ui.form.on('Asset Allocation', {
         });
     }
 });
+
+frappe.ui.form.on('Asset Allocation Table', {
+    asset: function (frm, cdt, cdn) {
+        let row = locals[cdt][cdn];
+        if (row.asset) {
+            frappe.call({
+                method: 'frappe.client.get',
+                args: {
+                    doctype: 'Asset',
+                    name: row.asset
+                },
+                callback: function (r) {
+                    if (r.message) {
+                        let item_name = r.message.item_name || '';
+                        let asset_name = r.message.asset_name || '';
+                        frappe.model.set_value(cdt, cdn, 'asset_name', `${item_name} - ${asset_name}`);
+                    }
+                }
+            });
+        } else {
+            frappe.model.set_value(cdt, cdn, 'asset_name', '');
+        }
+    }
+});
