@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"WXOsjMQWuk\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">IT</span>\",\"col\":12}},{\"id\":\"RtNNYmhyfJ\",\"type\":\"card\",\"data\":{\"card_name\":\"Cellphones\",\"col\":4}},{\"id\":\"DfjQLJjZra\",\"type\":\"card\",\"data\":{\"card_name\":\"CCTV\",\"col\":4}},{\"id\":\"aJ_46UYmF7\",\"type\":\"card\",\"data\":{\"card_name\":\"Printers\",\"col\":4}},{\"id\":\"RHuIwKUvfi\",\"type\":\"card\",\"data\":{\"card_name\":\"Asset Maintenance\",\"col\":4}},{\"id\":\"N_83NAH4q3\",\"type\":\"card\",\"data\":{\"card_name\":\"Two-Way Radios\",\"col\":4}}]",
+ "content": "[{\"id\":\"WXOsjMQWuk\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">IT</span>\",\"col\":12}},{\"id\":\"RtNNYmhyfJ\",\"type\":\"card\",\"data\":{\"card_name\":\"Cellphones\",\"col\":4}},{\"id\":\"DfjQLJjZra\",\"type\":\"card\",\"data\":{\"card_name\":\"CCTV\",\"col\":4}},{\"id\":\"RHuIwKUvfi\",\"type\":\"card\",\"data\":{\"card_name\":\"Asset Maintenance\",\"col\":4}}]",
  "creation": "2024-10-11 11:13:49.828811",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,25 +13,6 @@
  "is_hidden": 0,
  "label": "IT",
  "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Printers",
-   "link_count": 1,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Printer Allocation",
-   "link_count": 0,
-   "link_to": "Printer Allocation",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
   {
    "hidden": 0,
    "is_query_report": 0,
@@ -123,25 +104,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Two-Way Radios",
-   "link_count": 1,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Radio Allocation",
-   "link_count": 0,
-   "link_to": "Radio Allocation",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Asset Maintenance",
    "link_count": 4,
    "link_type": "DocType",
@@ -189,7 +151,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-01-28 11:51:18.609986",
+ "modified": "2025-02-14 07:11:54.830538",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "IT",
