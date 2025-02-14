@@ -31,7 +31,7 @@
    "fieldtype": "Dynamic Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Employee / Plant Number",
+   "label": "Employee / Plant Number / Site Name",
    "options": "employee_or_asset",
    "reqd": 1
   },
@@ -55,8 +55,8 @@
    "fieldname": "employee_or_asset",
    "fieldtype": "Link",
    "ignore_user_permissions": 1,
-   "label": "Employee or Asset",
-   "link_filters": "[[\"DocType\",\"name\",\"in\",[\"Employee\",\"Asset\"]]]",
+   "label": "Employee, Asset, or Site",
+   "link_filters": "[[\"DocType\",\"name\",\"in\",[\"Employee\",\"Asset\",\"Location\"]]]",
    "options": "DocType"
   },
   {
@@ -82,7 +82,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-13 14:43:50.840445",
+ "modified": "2025-02-14 07:03:48.699715",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Asset Allocation",

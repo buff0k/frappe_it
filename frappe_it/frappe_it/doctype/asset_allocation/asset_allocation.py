@@ -29,6 +29,13 @@ def get_employee_or_asset_details(doctype, docname):
                 "site": doc.location if doc.location else _("Location not found"),
                 "employee_asset_name": doc.item_name if doc.item_name else _("Name not found"),
             }
+        elif doctype == "Location":
+            # Fetch linked Location and Item Name
+            doc = frappe.get_doc("Location", docname)
+            return {
+                "site": doc.name if doc.name else _("Location not found"),
+                "employee_asset_name": doc.name if doc.name else _("Location not found"),
+            }
         else:
             frappe.throw(_("Invalid Doctype: {0}").format(doctype))
     except Exception as e:

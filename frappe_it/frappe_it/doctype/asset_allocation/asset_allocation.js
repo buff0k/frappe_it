@@ -17,6 +17,8 @@ frappe.ui.form.on('Asset Allocation', {
             frm.set_value('branch_or_location', 'Branch');
         } else if (selected_doctype === 'Asset') {
             frm.set_value('branch_or_location', 'Location');
+        } else if (selected_doctype === 'Location') {
+            frm.set_value('branch_or_location', 'Location');
         }
 
         // Clear dependent fields until new data is fetched
