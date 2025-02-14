@@ -358,5 +358,29 @@
   "share": 0,
   "submit": 0,
   "write": 1
+ },
+ {
+  "amend": 0,
+  "cancel": 0,
+  "create": 1,
+  "delete": 0,
+  "docstatus": 0,
+  "doctype": "Custom DocPerm",
+  "email": 0,
+  "export": 1,
+  "if_owner": 0,
+  "import": 0,
+  "modified": "2025-02-14 09:11:53.141241",
+  "name": "t6np1j1v1d",
+  "parent": "Brand",
+  "permlevel": 0,
+  "print": 0,
+  "read": 1,
+  "report": 0,
+  "role": "IT User",
+  "select": 1,
+  "share": 0,
+  "submit": 0,
+  "write": 1
  }
 ]
