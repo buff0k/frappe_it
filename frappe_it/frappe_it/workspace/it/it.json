@@ -105,7 +105,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Asset Maintenance",
-   "link_count": 4,
+   "link_count": 6,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -113,9 +113,9 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Item",
+   "label": "Asset Allocation",
    "link_count": 0,
-   "link_to": "Item",
+   "link_to": "Asset Allocation",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -133,9 +133,9 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Supplier",
+   "label": "Asset Category",
    "link_count": 0,
-   "link_to": "Supplier",
+   "link_to": "Asset Category",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -143,15 +143,35 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Asset Allocation",
+   "label": "Item",
    "link_count": 0,
-   "link_to": "Asset Allocation",
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item Group",
+   "link_count": 0,
+   "link_to": "Item Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Supplier",
+   "link_count": 0,
+   "link_to": "Supplier",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2025-02-14 07:11:54.830538",
+ "modified": "2025-02-14 08:33:55.108674",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "IT",
