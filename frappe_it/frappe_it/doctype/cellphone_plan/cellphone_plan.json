@@ -8,7 +8,9 @@
  "engine": "InnoDB",
  "field_order": [
   "plan_name",
-  "monthly_cost"
+  "monthly_cost",
+  "bundled_minutes",
+  "bundled_data"
  ],
  "fields": [
   {
@@ -28,11 +30,22 @@
    "precision": "2",
    "reqd": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "bundled_minutes",
+   "fieldtype": "Data",
+   "label": "Inlcuded Minutes",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "bundled_data",
+   "fieldtype": "Data",
+   "label": "Included Data (MB/GB)"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-11 17:24:47.417354",
+ "modified": "2025-02-19 15:27:48.080064",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Cellphone Plan",
