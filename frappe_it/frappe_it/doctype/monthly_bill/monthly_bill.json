@@ -310,7 +310,6 @@
    "fieldname": "admin_fee",
    "fieldtype": "Currency",
    "label": "Admin Fee",
-   "non_negative": 1,
    "precision": "2"
   },
   {
@@ -401,7 +400,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-13 07:58:11.558930",
+ "modified": "2025-03-12 14:56:04.895151",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Monthly Bill",
