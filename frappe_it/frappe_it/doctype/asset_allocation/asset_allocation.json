@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_import": 1,
- "autoname": "format:{employee_asset_name}",
+ "autoname": "format:{employee_asset_name} ({employee_or_asset})",
  "creation": "2025-01-28 10:38:43.480176",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -82,7 +82,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-14 07:03:48.699715",
+ "modified": "2025-03-17 13:25:40.103636",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Asset Allocation",
