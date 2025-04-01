@@ -41,3 +41,19 @@ def get_employee_or_asset_details(doctype, docname):
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), _("Error in get_employee_or_asset_details"))
         frappe.throw(_("An error occurred while fetching the document data: {0}").format(str(e)))
+
+@frappe.whitelist()
+def check_asset_allocation(asset, docname=None):
+    """Check if an asset is already allocated in another 'Asset Allocation' document."""
+    if not frappe.has_permission('Asset Allocation', 'read'):
+        frappe.throw(_("You do not have permission to access this resource."), frappe.PermissionError)
+
+    allocations = frappe.get_all(
+        'Asset Allocation Table',
+        filters={'asset': asset, 'parent': ['!=', docname]},
+        fields=['parent']
+    )
+
+    if allocations:
+        return [alloc['parent'] for alloc in allocations]
+    return []

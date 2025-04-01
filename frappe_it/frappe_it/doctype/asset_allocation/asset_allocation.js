@@ -67,18 +67,40 @@ frappe.ui.form.on('Asset Allocation', {
 frappe.ui.form.on('Asset Allocation Table', {
     asset: function (frm, cdt, cdn) {
         let row = locals[cdt][cdn];
+
         if (row.asset) {
+            // Call the whitelisted method to check allocation
             frappe.call({
-                method: 'frappe.client.get',
+                method: 'frappe_it.frappe_it.doctype.asset_allocation.asset_allocation.check_asset_allocation',
                 args: {
-                    doctype: 'Asset',
-                    name: row.asset
+                    asset: row.asset,
+                    docname: frm.doc.name
                 },
                 callback: function (r) {
-                    if (r.message) {
-                        let item_name = r.message.item_name || '';
-                        let asset_name = r.message.asset_name || '';
-                        frappe.model.set_value(cdt, cdn, 'asset_name', `${item_name} - ${asset_name}`);
+                    if (r.message && r.message.length > 0) {
+                        let allocated_to = r.message.join(', ');
+                        frappe.msgprint({
+                            title: __('Asset Already Allocated'),
+                            message: __('The asset {0} is already allocated in: {1}', [row.asset, allocated_to]),
+                            indicator: 'red'
+                        });
+                        frappe.model.set_value(cdt, cdn, 'asset', '');
+                    } else {
+                        // Fetch asset details if not allocated
+                        frappe.call({
+                            method: 'frappe.client.get',
+                            args: {
+                                doctype: 'Asset',
+                                name: row.asset
+                            },
+                            callback: function (r) {
+                                if (r.message) {
+                                    let item_name = r.message.item_name || '';
+                                    let asset_name = r.message.asset_name || '';
+                                    frappe.model.set_value(cdt, cdn, 'asset_name', `${item_name} - ${asset_name}`);
+                                }
+                            }
+                        });
                     }
                 }
             });
