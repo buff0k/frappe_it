@@ -12,7 +12,8 @@ fixtures = [
 	{"dt": "Item Group", "filters": [["name", "in", ["Cellphone Simcards", "Handheld Radio", "IP Cameras", "NVRs", "Vehicle Mounted Radio"]]]}
 ]
 before_migrate = [
-	"frappe_it.setup.add_employee_doclinks.ensure_employee_links"
+	"frappe_it.setup.add_employee_doclinks.ensure_employee_links",
+	"frappe_it.setup.add_asset_doclinks.ensure_asset_links"
 ]
 # Apps
 # ------------------
