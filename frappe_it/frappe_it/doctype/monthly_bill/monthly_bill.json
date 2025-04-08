@@ -135,7 +135,6 @@
    "fieldname": "subscription",
    "fieldtype": "Currency",
    "label": "Subscription",
-   "non_negative": 1,
    "precision": "2"
   },
   {
@@ -148,35 +147,30 @@
    "fieldname": "calls_national",
    "fieldtype": "Currency",
    "label": "Calls - National",
-   "non_negative": 1,
    "precision": "2"
   },
   {
    "fieldname": "entertainment_services",
    "fieldtype": "Currency",
    "label": "Entertainment Services",
-   "non_negative": 1,
    "precision": "2"
   },
   {
    "fieldname": "direct_provisioning",
    "fieldtype": "Currency",
    "label": "Direct Provisioning",
-   "non_negative": 1,
    "precision": "2"
   },
   {
    "fieldname": "calls_international",
    "fieldtype": "Currency",
    "label": "Calls - International",
-   "non_negative": 1,
    "precision": "2"
   },
   {
    "fieldname": "calls_roaming",
    "fieldtype": "Currency",
    "label": "Calls - Roaming",
-   "non_negative": 1,
    "precision": "2"
   },
   {
@@ -189,7 +183,6 @@
    "fieldname": "calls_data",
    "fieldtype": "Currency",
    "label": "Calls - Data",
-   "non_negative": 1,
    "precision": "2"
   },
   {
@@ -202,7 +195,6 @@
    "fieldname": "calls_messaging",
    "fieldtype": "Currency",
    "label": "Calls - Messaging",
-   "non_negative": 1,
    "precision": "2"
   },
   {
@@ -215,49 +207,42 @@
    "fieldname": "bundles_voice",
    "fieldtype": "Currency",
    "label": "Bundles - Voice",
-   "non_negative": 1,
    "precision": "2"
   },
   {
    "fieldname": "bundles_messaging",
    "fieldtype": "Currency",
    "label": "Bundles - Messaging",
-   "non_negative": 1,
    "precision": "2"
   },
   {
    "fieldname": "bundles_data",
    "fieldtype": "Currency",
    "label": "Bundles - Data",
-   "non_negative": 1,
    "precision": "2"
   },
   {
    "fieldname": "bundles_adhoc",
    "fieldtype": "Currency",
    "label": "Bundles - Adhoc",
-   "non_negative": 1,
    "precision": "2"
   },
   {
    "fieldname": "clip",
    "fieldtype": "Currency",
    "label": "CLIP",
-   "non_negative": 1,
    "precision": "2"
   },
   {
    "fieldname": "blackberry",
    "fieldtype": "Currency",
    "label": "Blackberry",
-   "non_negative": 1,
    "precision": "2"
   },
   {
    "fieldname": "itemised_billing",
    "fieldtype": "Currency",
    "label": "Itemised Billing",
-   "non_negative": 1,
    "precision": "2"
   },
   {
@@ -269,35 +254,30 @@
    "fieldname": "vodamanage",
    "fieldtype": "Currency",
    "label": "Vodamanage",
-   "non_negative": 1,
    "precision": "2"
   },
   {
    "fieldname": "look_4_services",
    "fieldtype": "Currency",
    "label": "Look 4 Services",
-   "non_negative": 1,
    "precision": "2"
   },
   {
    "fieldname": "insurance",
    "fieldtype": "Currency",
    "label": "Insurance",
-   "non_negative": 1,
    "precision": "2"
   },
   {
    "fieldname": "equipment",
    "fieldtype": "Currency",
    "label": "Equipment",
-   "non_negative": 1,
    "precision": "2"
   },
   {
    "fieldname": "connection_fee",
    "fieldtype": "Currency",
    "label": "Connection Fee",
-   "non_negative": 1,
    "precision": "2"
   },
   {
@@ -316,21 +296,18 @@
    "fieldname": "other",
    "fieldtype": "Currency",
    "label": "Other",
-   "non_negative": 1,
    "precision": "2"
   },
   {
    "fieldname": "total",
    "fieldtype": "Currency",
    "label": "Total",
-   "non_negative": 1,
    "precision": "2"
   },
   {
    "fieldname": "vat",
    "fieldtype": "Currency",
    "label": "VAT",
-   "non_negative": 1,
    "precision": "2"
   },
   {
@@ -398,9 +375,10 @@
    "label": "Itemized Bill"
   }
  ],
+ "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-12 14:56:04.895151",
+ "modified": "2025-04-08 16:37:44.209056",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Monthly Bill",
@@ -433,6 +411,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
