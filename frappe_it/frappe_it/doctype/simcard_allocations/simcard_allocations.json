@@ -13,12 +13,13 @@
   "msisdn",
   "branch",
   "sim_status",
+  "replacement",
   "column_break_qhwv",
   "employee",
   "employee_name",
   "start_date",
   "end_date",
-  "replacement",
+  "upg_date",
   "section_break_ksso",
   "notes",
   "simcard_allocations"
@@ -120,11 +121,17 @@
    "label": "Replacement Sim Card",
    "link_filters": "[[\"Asset\",\"asset_category\",\"=\",\"Cellphone Simcards\"]]",
    "options": "Asset"
+  },
+  {
+   "fieldname": "upg_date",
+   "fieldtype": "Date",
+   "label": "Contract Upgrade Date"
   }
  ],
+ "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-12 13:36:27.216135",
+ "modified": "2025-05-08 12:28:29.378275",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Simcard Allocations",
@@ -157,6 +164,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
