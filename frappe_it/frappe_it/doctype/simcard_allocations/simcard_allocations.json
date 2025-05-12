@@ -19,11 +19,9 @@
   "sim_no",
   "tel_no",
   "msisdn",
-  "branch",
   "sim_status",
   "replacement",
   "column_break_qhwv",
-  "employee",
   "start_date",
   "end_date",
   "upg_date",
@@ -47,13 +45,6 @@
    "in_standard_filter": 1,
    "label": "Telephone Number",
    "reqd": 1,
-   "search_index": 1
-  },
-  {
-   "fieldname": "employee",
-   "fieldtype": "Link",
-   "label": "Employee",
-   "options": "Employee",
    "search_index": 1
   },
   {
@@ -98,12 +89,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "branch",
-   "fieldtype": "Link",
-   "label": "Site",
-   "options": "Branch"
-  },
-  {
    "fieldname": "simcard_allocations",
    "fieldtype": "Table",
    "is_virtual": 1,
@@ -132,6 +117,7 @@
   {
    "fieldname": "branch_or_location",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Branch or Location",
    "link_filters": "[[\"DocType\",\"name\",\"in\",[\"Branch\",\"Location\"]]]",
    "options": "DocType"
@@ -179,7 +165,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-12 08:24:28.523511",
+ "modified": "2025-05-12 08:40:31.621299",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Simcard Allocations",
