@@ -8,6 +8,14 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "branch_or_location",
+  "allocated_to_section",
+  "employee_or_site",
+  "allocated_to",
+  "column_break_wwyi",
+  "employee_name",
+  "site",
+  "section_break_xoeo",
   "sim_no",
   "tel_no",
   "msisdn",
@@ -16,7 +24,6 @@
   "replacement",
   "column_break_qhwv",
   "employee",
-  "employee_name",
   "start_date",
   "end_date",
   "upg_date",
@@ -45,8 +52,6 @@
   {
    "fieldname": "employee",
    "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Employee",
    "options": "Employee",
    "search_index": 1
@@ -63,7 +68,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Employee Name",
+   "label": "Allocated To",
    "read_only": 1,
    "search_index": 1
   },
@@ -95,11 +100,8 @@
   {
    "fieldname": "branch",
    "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Site",
-   "options": "Branch",
-   "reqd": 1
+   "options": "Branch"
   },
   {
    "fieldname": "simcard_allocations",
@@ -126,12 +128,58 @@
    "fieldname": "upg_date",
    "fieldtype": "Date",
    "label": "Contract Upgrade Date"
+  },
+  {
+   "fieldname": "branch_or_location",
+   "fieldtype": "Link",
+   "label": "Branch or Location",
+   "link_filters": "[[\"DocType\",\"name\",\"in\",[\"Branch\",\"Location\"]]]",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "section_break_xoeo",
+   "fieldtype": "Section Break",
+   "label": "Simcard Details"
+  },
+  {
+   "fieldname": "allocated_to_section",
+   "fieldtype": "Section Break",
+   "label": "Allocated To"
+  },
+  {
+   "fieldname": "allocated_to",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee / Site Name",
+   "options": "employee_or_site",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_wwyi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Allocated Site",
+   "options": "branch_or_location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_or_site",
+   "fieldtype": "Link",
+   "label": "Employee or Site",
+   "link_filters": "[[\"DocType\",\"name\",\"in\",[\"Employee\",\"Location\"]]]",
+   "options": "DocType"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-08 12:28:29.378275",
+ "modified": "2025-05-12 08:24:28.523511",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Simcard Allocations",

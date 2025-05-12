@@ -6,3 +6,4 @@
 # Patches added in this section will be executed after doctypes are migrated
 frappe_it.patches.create_cellphone_simcard
 frappe_it.patches.create_cctv_cats
+frappe_it.patches.simcard_allocations_data_migration
