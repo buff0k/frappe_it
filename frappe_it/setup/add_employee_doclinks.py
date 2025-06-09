@@ -6,8 +6,7 @@ import frappe
 def ensure_employee_links():
     """Ensure required Document Links exist in the Employee DocType."""
     required_links = [
-        {"link_doctype": "Asset Allocation", "link_fieldname": "allocated_to"},
-        {"link_doctype": "Simcard Allocations", "link_fieldname": "employee"}
+        {"link_doctype": "Asset Allocation", "link_fieldname": "allocated_to"}
     ]
 
     # Fetch existing links
