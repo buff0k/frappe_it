@@ -63,5 +63,31 @@
   "old_parent": "All Item Groups",
   "parent_item_group": "All Item Groups",
   "taxes": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Item Group",
+  "image": null,
+  "is_group": 0,
+  "item_group_defaults": [],
+  "item_group_name": "Laptop Computer",
+  "modified": "2025-02-14 08:49:32.931813",
+  "name": "Laptop Computer",
+  "old_parent": "All Item Groups",
+  "parent_item_group": "All Item Groups",
+  "taxes": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Item Group",
+  "image": null,
+  "is_group": 0,
+  "item_group_defaults": [],
+  "item_group_name": "Cellular Telephone",
+  "modified": "2025-02-19 11:09:16.526768",
+  "name": "Cellular Telephone",
+  "old_parent": "All Item Groups",
+  "parent_item_group": "All Item Groups",
+  "taxes": []
  }
 ]

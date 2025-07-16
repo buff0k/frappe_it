@@ -133,5 +133,57 @@
   "finance_books": [],
   "modified": "2024-10-17 09:06:15.161508",
   "name": "Cellphone Simcards"
+ },
+ {
+  "accounts": [
+   {
+    "accumulated_depreciation_account": null,
+    "capital_work_in_progress_account": null,
+    "company_name": "Isambane Mining (Pty) Ltd",
+    "depreciation_expense_account": null,
+    "fixed_asset_account": "Electronic Equipments - ISA",
+    "parent": "Cellular Telephone",
+    "parentfield": "accounts",
+    "parenttype": "Asset Category"
+   },
+   {
+    "accumulated_depreciation_account": "Accumulated Depreciation - EX",
+    "capital_work_in_progress_account": null,
+    "company_name": "Excavo Mining (Pty) Ltd",
+    "depreciation_expense_account": "Depreciation - EX",
+    "fixed_asset_account": "Electronic Equipments - EX",
+    "parent": "Cellular Telephone",
+    "parentfield": "accounts",
+    "parenttype": "Asset Category"
+   }
+  ],
+  "asset_category_name": "Cellular Telephone",
+  "docstatus": 0,
+  "doctype": "Asset Category",
+  "enable_cwip_accounting": 0,
+  "finance_books": [],
+  "modified": "2025-02-19 11:20:34.037516",
+  "name": "Cellular Telephone"
+ },
+ {
+  "accounts": [
+   {
+    "accumulated_depreciation_account": null,
+    "capital_work_in_progress_account": null,
+    "company_name": "Isambane Mining (Pty) Ltd",
+    "depreciation_expense_account": null,
+    "fixed_asset_account": "Buildings - ISA",
+    "parent": "Laptop Computer",
+    "parentfield": "accounts",
+    "parenttype": "Asset Category"
+   }
+  ],
+  "asset_category_name": "Laptop Computer",
+  "docstatus": 0,
+  "doctype": "Asset Category",
+  "enable_cwip_accounting": 0,
+  "finance_books": [],
+  "modified": "2025-02-14 08:49:49.859630",
+  "name": "Laptop Computer"
  }
 ]

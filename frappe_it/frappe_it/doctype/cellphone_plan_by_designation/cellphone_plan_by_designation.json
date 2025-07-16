@@ -38,7 +38,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-16 13:24:13.343904",
+ "modified": "2025-07-16 13:50:06.280782",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Cellphone Plan by Designation",
@@ -78,8 +78,7 @@
    "report": 1,
    "role": "IT User",
    "select": 1,
-   "share": 1,
-   "write": 1
+   "share": 1
   }
  ],
  "row_format": "Dynamic",
