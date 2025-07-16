@@ -8,7 +8,7 @@
  "for_user": "",
  "hide_custom": 0,
  "icon": "support",
- "idx": 1,
+ "idx": 3,
  "indicator_color": "",
  "is_hidden": 0,
  "label": "IT",
@@ -16,8 +16,37 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "CCTV",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "NVR Details",
+   "link_count": 0,
+   "link_to": "NVR Details",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "IP Camera Details",
+   "link_count": 0,
+   "link_to": "IP Camera Details",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Cellphones",
-   "link_count": 5,
+   "link_count": 6,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -75,28 +104,9 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "CCTV",
-   "link_count": 2,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "NVR Details",
+   "label": "Cellphone Plan by Designation",
    "link_count": 0,
-   "link_to": "NVR Details",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "IP Camera Details",
-   "link_count": 0,
-   "link_to": "IP Camera Details",
+   "link_to": "Cellphone Plan by Designation",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -105,7 +115,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Asset Maintenance",
-   "link_count": 6,
+   "link_count": 7,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -169,9 +179,19 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Request",
+   "link_count": 0,
+   "link_to": "Asset Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-02-14 08:33:55.108674",
+ "modified": "2025-07-16 12:38:57.240940",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "IT",
