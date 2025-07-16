@@ -8,6 +8,7 @@
   "section_break_fqcc",
   "amended_from",
   "branch_or_location",
+  "letter_head",
   "company",
   "employee_making_the_request_section",
   "requested_by",
@@ -167,13 +168,19 @@
    "label": "Designation",
    "options": "Designation",
    "read_only": 1
+  },
+  {
+   "fieldname": "letter_head",
+   "fieldtype": "Link",
+   "label": "Letterhead",
+   "options": "Letter Head"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-07-16 17:59:15.768957",
+ "modified": "2025-07-16 19:55:07.888561",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Asset Request",

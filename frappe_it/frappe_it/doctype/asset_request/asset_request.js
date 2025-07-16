@@ -21,6 +21,19 @@ frappe.ui.form.on('Asset Request', {
         }
     },
 
+    company: function(frm) {
+        if (frm.doc.company) {
+            frappe.db.get_doc('Company', frm.doc.company).then(company => {
+                if (company.default_letter_head) {
+                    frm.set_value('letter_head', company.default_letter_head);
+                } else {
+                    frm.set_value('letter_head', '');
+                    frappe.msgprint('This company has no default Letter Head set.');
+                }
+            });
+        }
+    },
+
     requested_by: function (frm) {
         if (frm.doc.requested_by) {
             frappe.db.get_doc('Employee', frm.doc.requested_by)
