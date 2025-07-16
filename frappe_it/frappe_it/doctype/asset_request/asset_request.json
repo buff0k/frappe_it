@@ -8,6 +8,7 @@
   "section_break_fqcc",
   "amended_from",
   "branch_or_location",
+  "company",
   "employee_making_the_request_section",
   "requested_by",
   "requested_by_designation",
@@ -19,7 +20,13 @@
   "column_break_pwsk",
   "allocate_to",
   "employee_asset_name",
-  "allocate_to_site"
+  "allocate_to_site",
+  "employee_asset_designation",
+  "asset_requested_section",
+  "asset_request_list",
+  "email_required",
+  "comments",
+  "attach_signed"
  ],
  "fields": [
   {
@@ -72,6 +79,7 @@
   {
    "fieldname": "branch_or_location",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Branch or Location",
    "link_filters": "[[\"DocType\",\"name\",\"in\",[\"Branch\",\"Location\"]]]",
    "options": "DocType"
@@ -118,13 +126,54 @@
    "label": "Site",
    "options": "branch_or_location",
    "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "asset_requested_section",
+   "fieldtype": "Section Break",
+   "label": "Asset Requested"
+  },
+  {
+   "fieldname": "asset_request_list",
+   "fieldtype": "Table",
+   "label": "Asset Request List",
+   "options": "Asset Request List"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments / Remarks"
+  },
+  {
+   "default": "0",
+   "fieldname": "email_required",
+   "fieldtype": "Check",
+   "label": "User Requires Email Address"
+  },
+  {
+   "fieldname": "attach_signed",
+   "fieldtype": "Attach",
+   "label": "Attach Signed Asset Request"
+  },
+  {
+   "fieldname": "employee_asset_designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-07-16 13:24:00.765067",
+ "modified": "2025-07-16 17:59:15.768957",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Asset Request",

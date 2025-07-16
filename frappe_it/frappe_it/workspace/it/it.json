@@ -46,7 +46,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Cellphones",
-   "link_count": 6,
+   "link_count": 5,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -104,18 +104,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Cellphone Plan by Designation",
-   "link_count": 0,
-   "link_to": "Cellphone Plan by Designation",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Asset Maintenance",
-   "link_count": 7,
+   "link_count": 9,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -189,9 +179,29 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Laptop Specification",
+   "link_count": 0,
+   "link_to": "Laptop Specification",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cellphone Plan by Designation",
+   "link_count": 0,
+   "link_to": "Cellphone Plan by Designation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-07-16 12:38:57.240940",
+ "modified": "2025-07-16 17:26:06.812361",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "IT",

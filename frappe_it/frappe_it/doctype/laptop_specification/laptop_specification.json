@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:spec_level",
+ "creation": "2025-07-16 17:23:25.191926",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "spec_level",
+  "section_break_qoep",
+  "cpu",
+  "gpu",
+  "column_break_vafc",
+  "ram",
+  "storage",
+  "section_break_hzce",
+  "designations"
+ ],
+ "fields": [
+  {
+   "fieldname": "spec_level",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Specification Level",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "designations",
+   "fieldtype": "Table",
+   "label": "Designations",
+   "options": "Cellphone Plan Designation List"
+  },
+  {
+   "fieldname": "cpu",
+   "fieldtype": "Data",
+   "label": "CPU",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ram",
+   "fieldtype": "Data",
+   "label": "RAM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "storage",
+   "fieldtype": "Data",
+   "label": "Storage",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gpu",
+   "fieldtype": "Data",
+   "label": "GPU"
+  },
+  {
+   "fieldname": "section_break_qoep",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_vafc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hzce",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-16 17:28:28.765948",
+ "modified_by": "Administrator",
+ "module": "Frappe IT",
+ "name": "Laptop Specification",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "IT Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "IT User",
+   "select": 1,
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

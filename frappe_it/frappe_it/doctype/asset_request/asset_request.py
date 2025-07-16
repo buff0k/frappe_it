@@ -7,7 +7,9 @@ from frappe import _
 
 
 class AssetRequest(Document):
-	pass
+    def before_submit(self):
+        if not self.attach_signed:
+            frappe.throw(_("Please attach a signed copy before submitting."))
 
 @frappe.whitelist()
 def get_employee_or_asset_details(doctype, docname):
@@ -21,6 +23,7 @@ def get_employee_or_asset_details(doctype, docname):
             return {
                 "allocate_to_site": doc.branch if doc.branch else _("Branch not found"),
                 "employee_asset_name": doc.employee_name if doc.employee_name else _("Name not found"),
+                "employee_asset_designation": doc.designation if doc.designation else _("Designation not found"),
             }
         elif doctype == "Asset":
             # Fetch linked Location and Item Name
