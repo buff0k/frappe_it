@@ -6,10 +6,32 @@ app_email = "buff0k@gmail.com"
 app_license = "mit"
 required_apps = ["frappe/erpnext", "frappe/hrms"]
 fixtures = [
-	{"dt": "Role", "filters": [["name", "in", ["IT Manager", "IT User"]]]},
-	{"dt": "Custom DocPerm", "filters": [["role", "in", ["IT Manager", "IT User"]]]},
-	{"dt": "Asset Category", "filters": [["name", "in", ["Cellphone Simcards", "Handheld Radio", "IP Cameras", "NVRs", "Vehicle Mounted Radio", "Cellular Telephone", "Laptop Computer"]]]},
-	{"dt": "Item Group", "filters": [["name", "in", ["Cellphone Simcards", "Handheld Radio", "IP Cameras", "NVRs", "Vehicle Mounted Radio", "Cellular Telephone", "Laptop Computer"]]]}
+	{"dt": "Role", "filters": [["name", "in", [
+		"IT Manager",
+		"IT User"
+	]]]},
+	{"dt": "Custom DocPerm", "filters": [["role", "in", [
+		"IT Manager",
+		"IT User"
+	]]]},
+	{"dt": "Asset Category", "filters": [["name", "in", [
+		"Cellphone Simcards",
+		"Handheld Radio",
+		"IP Cameras",
+		"NVRs",
+		"Vehicle Mounted Radio",
+		"Cellular Telephone",
+		"Laptop Computer"
+	]]]},
+	{"dt": "Item Group", "filters": [["name", "in", [
+		"Cellphone Simcards",
+		"Handheld Radio",
+		"IP Cameras",
+		"NVRs",
+		"Vehicle Mounted Radio",
+		"Cellular Telephone",
+		"Laptop Computer"
+	]]]}
 ]
 after_migrate = [
 	"frappe_it.setup.add_employee_doclinks.ensure_employee_links",
