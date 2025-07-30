@@ -33,5 +33,3 @@ def ensure_employee_links():
             doc.insert(ignore_permissions=True)
             frappe.db.commit()
             frappe.msgprint(f"Added missing Document Link: {link['link_doctype']} to Employee")
-
-    print("✅ Employee DocType Links to Frappe IT DocTypes verified/updated.")

@@ -53,4 +53,3 @@ def ensure_asset_links():
             frappe.db.commit()
             frappe.msgprint(f"Added missing Document Link: {link['link_doctype']} to {link.get('parent_doctype', 'Asset')}")
 
-    print("✅ Asset DocType Links to Frappe IT DocTypes verified/updated.")
