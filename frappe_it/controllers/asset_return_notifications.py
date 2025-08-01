@@ -76,7 +76,7 @@ def _notify_it(doc, action, changed_fields=None):
     if not recipient_emails:
         return
 
-    subject = f"An Asset Request for {doc.get('employee_asset_name')} ({doc.get('allocate_to')}) {action}"
+    subject = f"An Asset Return for {doc.get('employee_name')} ({doc.get('employee')}) {action}"
     url = frappe.utils.get_url(doc.get_url())
 
     # Send a personalized email to each recipient (so "Dear {user}" works)
@@ -87,7 +87,7 @@ def _notify_it(doc, action, changed_fields=None):
         lines = [
             f"Dear {full_name}",
             "",
-            f"An Asset Request for {doc.get('employee_asset_name')} ({doc.get('allocate_to')}) at {doc.get('allocate_to_site')} has been {action}",
+            f"An Asset Return for {doc.get('employee_name')} ({doc.get('employee')}) at {doc.get('branch')} has been {action}",
             "",
             f"Click here {url} to view",
         ]

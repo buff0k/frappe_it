@@ -42,6 +42,11 @@ doc_events = {
 		"after_insert": "frappe_it.controllers.asset_request_notifications.on_create",
 		"on_update": "frappe_it.controllers.asset_request_notifications.on_update",
 		"on_submit": "frappe_it.controllers.asset_request_notifications.on_submit",
+	},
+	"Asset Return": {
+		"after_insert": "frappe_it.controllers.asset_return_notifications.on_create",
+		"on_update": "frappe_it.controllers.asset_return_notifications.on_update",
+		"on_submit": "frappe_it.controllers.asset_return_notifications.on_submit",
 	}
 }
 # Apps
