@@ -33,6 +33,9 @@ fixtures = [
 		"Laptop Computer"
 	]]]}
 ]
+before_migrate = [
+	"frappe_it.setup.patch_perm_logging.patch_perm_logging"
+]
 after_migrate = [
 	"frappe_it.setup.add_employee_doclinks.ensure_employee_links",
 	"frappe_it.setup.add_asset_doclinks.ensure_asset_links"

@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{allocate_to} - {DD}-{MM}-{YYYY}",
  "creation": "2025-07-16 12:28:12.123639",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -181,10 +182,11 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-07-16 20:00:50.644624",
+ "modified": "2025-08-01 09:21:58.333533",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Asset Request",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

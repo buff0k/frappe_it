@@ -18,7 +18,8 @@
   "enable_cwip_accounting": 0,
   "finance_books": [],
   "modified": "2024-10-29 11:38:23.802345",
-  "name": "IP Cameras"
+  "name": "IP Cameras",
+  "non_depreciable_category": 0
  },
  {
   "accounts": [
@@ -39,7 +40,8 @@
   "enable_cwip_accounting": 0,
   "finance_books": [],
   "modified": "2024-10-29 11:38:24.169231",
-  "name": "NVRs"
+  "name": "NVRs",
+  "non_depreciable_category": 0
  },
  {
   "accounts": [
@@ -70,7 +72,8 @@
   "enable_cwip_accounting": 0,
   "finance_books": [],
   "modified": "2024-11-18 12:56:32.867171",
-  "name": "Handheld Radio"
+  "name": "Handheld Radio",
+  "non_depreciable_category": 0
  },
  {
   "accounts": [
@@ -101,7 +104,8 @@
   "enable_cwip_accounting": 0,
   "finance_books": [],
   "modified": "2024-11-18 12:57:02.807778",
-  "name": "Vehicle Mounted Radio"
+  "name": "Vehicle Mounted Radio",
+  "non_depreciable_category": 0
  },
  {
   "accounts": [
@@ -132,7 +136,8 @@
   "enable_cwip_accounting": 0,
   "finance_books": [],
   "modified": "2024-10-17 09:06:15.161508",
-  "name": "Cellphone Simcards"
+  "name": "Cellphone Simcards",
+  "non_depreciable_category": 0
  },
  {
   "accounts": [
@@ -153,7 +158,8 @@
   "enable_cwip_accounting": 0,
   "finance_books": [],
   "modified": "2025-02-14 08:49:49.859630",
-  "name": "Laptop Computer"
+  "name": "Laptop Computer",
+  "non_depreciable_category": 0
  },
  {
   "accounts": [
@@ -184,6 +190,7 @@
   "enable_cwip_accounting": 0,
   "finance_books": [],
   "modified": "2025-02-19 11:20:34.037516",
-  "name": "Cellular Telephone"
+  "name": "Cellular Telephone",
+  "non_depreciable_category": 0
  }
 ]

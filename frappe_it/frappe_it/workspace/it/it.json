@@ -8,7 +8,7 @@
  "for_user": "",
  "hide_custom": 0,
  "icon": "support",
- "idx": 3,
+ "idx": 7,
  "indicator_color": "",
  "is_hidden": 0,
  "label": "IT",
@@ -105,7 +105,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Asset Maintenance",
-   "link_count": 9,
+   "link_count": 10,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -199,9 +199,19 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Return",
+   "link_count": 0,
+   "link_to": "Asset Return",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-07-16 17:26:06.812361",
+ "modified": "2025-07-31 19:16:02.327219",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "IT",
