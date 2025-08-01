@@ -33,13 +33,17 @@ fixtures = [
 		"Laptop Computer"
 	]]]}
 ]
-before_migrate = [
-	"frappe_it.setup.patch_perm_logging.patch_perm_logging"
-]
 after_migrate = [
 	"frappe_it.setup.add_employee_doclinks.ensure_employee_links",
 	"frappe_it.setup.add_asset_doclinks.ensure_asset_links"
 ]
+doc_events = {
+	"Asset Request": {
+		"after_insert": "frappe_it.controllers.asset_request_notifications.on_create",
+		"on_update": "frappe_it.controllers.asset_request_notifications.on_update",
+		"on_submit": "frappe_it.controllers.asset_request_notifications.on_submit",
+	}
+}
 # Apps
 # ------------------
 
