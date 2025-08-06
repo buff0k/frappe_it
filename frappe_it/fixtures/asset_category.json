@@ -146,28 +146,6 @@
     "capital_work_in_progress_account": null,
     "company_name": "Isambane Mining (Pty) Ltd",
     "depreciation_expense_account": null,
-    "fixed_asset_account": "Buildings - ISA",
-    "parent": "Laptop Computer",
-    "parentfield": "accounts",
-    "parenttype": "Asset Category"
-   }
-  ],
-  "asset_category_name": "Laptop Computer",
-  "docstatus": 0,
-  "doctype": "Asset Category",
-  "enable_cwip_accounting": 0,
-  "finance_books": [],
-  "modified": "2025-02-14 08:49:49.859630",
-  "name": "Laptop Computer",
-  "non_depreciable_category": 0
- },
- {
-  "accounts": [
-   {
-    "accumulated_depreciation_account": null,
-    "capital_work_in_progress_account": null,
-    "company_name": "Isambane Mining (Pty) Ltd",
-    "depreciation_expense_account": null,
     "fixed_asset_account": "Electronic Equipments - ISA",
     "parent": "Cellular Telephone",
     "parentfield": "accounts",
@@ -191,6 +169,28 @@
   "finance_books": [],
   "modified": "2025-02-19 11:20:34.037516",
   "name": "Cellular Telephone",
+  "non_depreciable_category": 0
+ },
+ {
+  "accounts": [
+   {
+    "accumulated_depreciation_account": null,
+    "capital_work_in_progress_account": null,
+    "company_name": "Isambane Mining (Pty) Ltd",
+    "depreciation_expense_account": null,
+    "fixed_asset_account": "Buildings - ISA",
+    "parent": "Laptop Computer",
+    "parentfield": "accounts",
+    "parenttype": "Asset Category"
+   }
+  ],
+  "asset_category_name": "Laptop Computer",
+  "docstatus": 0,
+  "doctype": "Asset Category",
+  "enable_cwip_accounting": 0,
+  "finance_books": [],
+  "modified": "2025-02-14 08:49:49.859630",
+  "name": "Laptop Computer",
   "non_depreciable_category": 0
  }
 ]

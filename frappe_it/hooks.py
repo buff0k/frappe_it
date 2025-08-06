@@ -41,7 +41,7 @@ doc_events = {
 	"Asset Request": {
 		"after_insert": "frappe_it.controllers.notifications.handle_doc_event_create",
 		"on_update": "frappe_it.controllers.notifications.handle_doc_event_update",
-	"on_submit": "frappe_it.controllers.notifications.handle_doc_event_submit",
+		"on_submit": "frappe_it.controllers.notifications.handle_doc_event_submit",
 	},
 	"Asset Return": {
 		"after_insert": "frappe_it.controllers.notifications.handle_doc_event_create",
