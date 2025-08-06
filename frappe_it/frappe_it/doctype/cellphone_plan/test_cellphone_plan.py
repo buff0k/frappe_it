@@ -1,4 +1,4 @@
-# Copyright (c) 2024, buff0k and Contributors
+# Copyright (c) 2025, BuFf0k and Contributors
 # See license.txt
 
 # import frappe
