@@ -46,7 +46,7 @@ frappe.ui.form.on('Monthly Bill', {
         frm.set_value('calculated_total', total);
 
         // Calculate overspend amount
-        let overspend = subtotal - frm.doc.subscription - frm.doc.equipment;
+        let overspend = subtotal - frm.doc.subscription - frm.doc.equipment - frm.doc.clip - frm.doc.itemised_billing - frm.doc.insurance;
         frm.set_value('overspend_amount', overspend);
 
         // Set overspend flag if overspend_amount is greater than 0
