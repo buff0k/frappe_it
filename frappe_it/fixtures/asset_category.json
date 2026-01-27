@@ -6,10 +6,7 @@
     "capital_work_in_progress_account": null,
     "company_name": "Isambane Mining (Pty) Ltd",
     "depreciation_expense_account": null,
-    "fixed_asset_account": "Softwares - ISA",
-    "parent": "IP Cameras",
-    "parentfield": "accounts",
-    "parenttype": "Asset Category"
+    "fixed_asset_account": "Softwares - ISA"
    }
   ],
   "asset_category_name": "IP Cameras",
@@ -28,10 +25,7 @@
     "capital_work_in_progress_account": null,
     "company_name": "Isambane Mining (Pty) Ltd",
     "depreciation_expense_account": null,
-    "fixed_asset_account": "Softwares - ISA",
-    "parent": "NVRs",
-    "parentfield": "accounts",
-    "parenttype": "Asset Category"
+    "fixed_asset_account": "Softwares - ISA"
    }
   ],
   "asset_category_name": "NVRs",
@@ -50,20 +44,14 @@
     "capital_work_in_progress_account": null,
     "company_name": "Isambane Mining (Pty) Ltd",
     "depreciation_expense_account": "Depreciation - ISA",
-    "fixed_asset_account": "Electronic Equipments - ISA",
-    "parent": "Handheld Radio",
-    "parentfield": "accounts",
-    "parenttype": "Asset Category"
+    "fixed_asset_account": "Electronic Equipments - ISA"
    },
    {
     "accumulated_depreciation_account": "Accumulated Depreciation - EX",
     "capital_work_in_progress_account": null,
     "company_name": "Excavo Mining (Pty) Ltd",
     "depreciation_expense_account": "Depreciation - EX",
-    "fixed_asset_account": "Electronic Equipments - EX",
-    "parent": "Handheld Radio",
-    "parentfield": "accounts",
-    "parenttype": "Asset Category"
+    "fixed_asset_account": "Electronic Equipments - EX"
    }
   ],
   "asset_category_name": "Handheld Radio",
@@ -82,20 +70,14 @@
     "capital_work_in_progress_account": null,
     "company_name": "Isambane Mining (Pty) Ltd",
     "depreciation_expense_account": "Depreciation - ISA",
-    "fixed_asset_account": "Electronic Equipments - ISA",
-    "parent": "Vehicle Mounted Radio",
-    "parentfield": "accounts",
-    "parenttype": "Asset Category"
+    "fixed_asset_account": "Electronic Equipments - ISA"
    },
    {
     "accumulated_depreciation_account": "Accumulated Depreciation - EX",
     "capital_work_in_progress_account": null,
     "company_name": "Excavo Mining (Pty) Ltd",
     "depreciation_expense_account": "Depreciation - EX",
-    "fixed_asset_account": "Electronic Equipments - EX",
-    "parent": "Vehicle Mounted Radio",
-    "parentfield": "accounts",
-    "parenttype": "Asset Category"
+    "fixed_asset_account": "Electronic Equipments - EX"
    }
   ],
   "asset_category_name": "Vehicle Mounted Radio",
@@ -114,20 +96,14 @@
     "capital_work_in_progress_account": null,
     "company_name": "Isambane Mining (Pty) Ltd",
     "depreciation_expense_account": null,
-    "fixed_asset_account": "Electronic Equipments - ISA",
-    "parent": "Cellphone Simcards",
-    "parentfield": "accounts",
-    "parenttype": "Asset Category"
+    "fixed_asset_account": "Electronic Equipments - ISA"
    },
    {
     "accumulated_depreciation_account": "",
     "capital_work_in_progress_account": null,
     "company_name": "Excavo Mining (Pty) Ltd",
     "depreciation_expense_account": "",
-    "fixed_asset_account": "Electronic Equipments - EX",
-    "parent": "Cellphone Simcards",
-    "parentfield": "accounts",
-    "parenttype": "Asset Category"
+    "fixed_asset_account": "Electronic Equipments - EX"
    }
   ],
   "asset_category_name": "Cellphone Simcards",
@@ -146,10 +122,7 @@
     "capital_work_in_progress_account": null,
     "company_name": "Isambane Mining (Pty) Ltd",
     "depreciation_expense_account": null,
-    "fixed_asset_account": "Buildings - ISA",
-    "parent": "Laptop Computer",
-    "parentfield": "accounts",
-    "parenttype": "Asset Category"
+    "fixed_asset_account": "Buildings - ISA"
    }
   ],
   "asset_category_name": "Laptop Computer",
@@ -168,20 +141,14 @@
     "capital_work_in_progress_account": null,
     "company_name": "Isambane Mining (Pty) Ltd",
     "depreciation_expense_account": null,
-    "fixed_asset_account": "Electronic Equipments - ISA",
-    "parent": "Cellular Telephone",
-    "parentfield": "accounts",
-    "parenttype": "Asset Category"
+    "fixed_asset_account": "Electronic Equipments - ISA"
    },
    {
     "accumulated_depreciation_account": "Accumulated Depreciation - EX",
     "capital_work_in_progress_account": null,
     "company_name": "Excavo Mining (Pty) Ltd",
     "depreciation_expense_account": "Depreciation - EX",
-    "fixed_asset_account": "Electronic Equipments - EX",
-    "parent": "Cellular Telephone",
-    "parentfield": "accounts",
-    "parenttype": "Asset Category"
+    "fixed_asset_account": "Electronic Equipments - EX"
    }
   ],
   "asset_category_name": "Cellular Telephone",
