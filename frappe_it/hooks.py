@@ -13,7 +13,7 @@ add_to_apps_screen = [
 		"logo": "/assets/frappe_it/images/is-logo.svg",
 		"title": app_title,
 		"route": app_home,
-		"has_permission": "ir.industrial_relations.utils.check_app_permission",
+		"has_permission": "frappe_it.frappe_it.utils.check_app_permission",
 	}
 ]
 fixtures = [
