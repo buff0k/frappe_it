@@ -23,7 +23,7 @@
   "section_break_rsfc",
   "notes",
   "section_break_qeuu",
-  "linked_cameras"
+  "linked_cameras_html"
  ],
  "fields": [
   {
@@ -109,13 +109,6 @@
    "label": "Linked Cameras"
   },
   {
-   "fieldname": "linked_cameras",
-   "fieldtype": "Table",
-   "is_virtual": 1,
-   "label": "Linked Cameras",
-   "options": "Linked Cameras"
-  },
-  {
    "fieldname": "mac_address",
    "fieldtype": "Data",
    "label": "MAC Address",
@@ -129,12 +122,19 @@
    "fieldname": "notes",
    "fieldtype": "Small Text",
    "label": "Notes"
+  },
+  {
+   "fieldname": "linked_cameras_html",
+   "fieldtype": "HTML",
+   "is_virtual": 1,
+   "label": "linked_cameras_html",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-16 13:26:57.080710",
+ "modified": "2026-02-02 14:05:00.072688",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "NVR Details",

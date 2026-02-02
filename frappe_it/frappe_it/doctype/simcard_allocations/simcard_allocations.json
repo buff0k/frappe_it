@@ -27,7 +27,7 @@
   "upg_date",
   "section_break_ksso",
   "notes",
-  "simcard_allocations"
+  "linked_bills_html"
  ],
  "fields": [
   {
@@ -87,13 +87,6 @@
   {
    "fieldname": "section_break_ksso",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "simcard_allocations",
-   "fieldtype": "Table",
-   "is_virtual": 1,
-   "label": "Linked Bills",
-   "options": "Simcard Bills"
   },
   {
    "fieldname": "sim_status",
@@ -160,12 +153,19 @@
    "label": "Employee or Site",
    "link_filters": "[[\"DocType\",\"name\",\"in\",[\"Employee\",\"Location\"]]]",
    "options": "DocType"
+  },
+  {
+   "fieldname": "linked_bills_html",
+   "fieldtype": "HTML",
+   "is_virtual": 1,
+   "label": "linked_bills_html",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-16 13:25:11.587389",
+ "modified": "2026-02-02 14:05:32.220060",
  "modified_by": "Administrator",
  "module": "Frappe IT",
  "name": "Simcard Allocations",

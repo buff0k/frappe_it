@@ -1,78 +1,43 @@
-// Copyright (c) 2025, BuFf0k and contributors
+// Copyright (c) 2026, BuFf0k
 // For license information, please see license.txt
 
 frappe.ui.form.on('Simcard Allocations', {
     onload: function (frm) {
         frm.trigger('set_sim_no_query');
-        frm.trigger('populate_child_table');
+        render_linked_bills_html(frm);
     },
+
+    refresh: function(frm) {
+        render_linked_bills_html(frm);
+    },
+
+    after_save: function(frm) {
+        render_linked_bills_html(frm);
+    },
+
     msisdn: function (frm) {
-        frm.trigger('populate_child_table');
+        render_linked_bills_html(frm);
     },
+
     employee: function (frm) {
         if (frm.doc.employee) {
-            // Fetch employee details from the Employee DocType
             frappe.db.get_doc('Employee', frm.doc.employee)
                 .then(employee_doc => {
                     if (employee_doc) {
-                        // Update the fields with the fetched data
                         frm.set_value('employee_name', employee_doc.employee_name);
                         frm.set_value('branch', employee_doc.branch);
                     }
                 })
                 .catch(error => {
-                    console.error('Error fetching employee:', error); // Handle any error fetching the employee
+                    console.error('Error fetching employee:', error);
                 });
         } else {
-            // Clear the fields if employee is not selected
             frm.set_value('employee_name', '');
             frm.set_value('branch', '');
         }
     },
-    populate_child_table: function (frm) {
-        if (frm.doc.msisdn) {
-            frappe.call({
-                method: 'frappe.client.get_list',
-                args: {
-                    doctype: 'Monthly Bill',
-                    fields: ['name', 'total', 'overspend_amount'],
-                    filters: {
-                        msisdn_no: frm.doc.msisdn
-                    },
-                    limit_page_length: 0
-                },
-                callback: function (response) {
-                    if (response && response.message) {
-                        const bills = response.message;
 
-                        // Clear existing rows in the child table
-                        frm.clear_table('simcard_allocations');
-
-                        // Populate the child table with fetched data
-                        bills.forEach(bill => {
-                            let row = frm.add_child('simcard_allocations');
-                            row.monthly_bill = bill.name;
-                            row.total = bill.total;
-                            row.overspend_amount = bill.overspend_amount;
-                        });
-
-                        // Refresh the table to display the new data
-                        frm.refresh_field('simcard_allocations');
-                    } else {
-                        // Clear the child table if no matching records are found
-                        frm.clear_table('simcard_allocations');
-                        frm.refresh_field('simcard_allocations');
-                    }
-                }
-            });
-        } else {
-            // Clear the table if sim_no is empty
-            frm.clear_table('simcard_allocations');
-            frm.refresh_field('simcard_allocations');
-        }
-    },
     set_sim_no_query: function (frm) {
-        console.log("Setting query for sim_no");
         frm.set_query('sim_no', function () {
             return {
                 query: 'frappe_it.frappe_it.doctype.simcard_allocations.simcard_allocations.get_available_simcards',
@@ -80,6 +45,7 @@ frappe.ui.form.on('Simcard Allocations', {
             };
         });
     },
+
     employee_or_site: function (frm) {
         const selected_doctype = frm.doc.employee_or_site;
 
@@ -91,19 +57,16 @@ frappe.ui.form.on('Simcard Allocations', {
             return;
         }
 
-        // Set branch_or_location based on the selected doctype
         if (selected_doctype === 'Employee') {
             frm.set_value('branch_or_location', 'Branch');
         } else if (selected_doctype === 'Location') {
             frm.set_value('branch_or_location', 'Location');
         }
 
-        // Clear dependent fields until new data is fetched
         frm.set_value('site', null);
         frm.set_value('employee_name', null);
         frm.set_value('allocated_to', null);
 
-        // Trigger updates for site and employee_site_name
         frm.trigger('update_site_and_name');
     },
 
@@ -121,7 +84,6 @@ frappe.ui.form.on('Simcard Allocations', {
             return;
         }
 
-        // Call the server script to fetch both the site and the employee_name
         frappe.call({
             method: 'frappe_it.frappe_it.doctype.simcard_allocations.simcard_allocations.get_employee_or_site_details',
             args: {
@@ -141,3 +103,29 @@ frappe.ui.form.on('Simcard Allocations', {
         });
     }
 });
+
+
+function render_linked_bills_html(frm) {
+    if (!frm.fields_dict.linked_bills_html) return;
+
+    frappe.require('/assets/frappe_it/css/it_ui.css');
+
+    if (frm.is_new() || frm.doc.__islocal) {
+        frm.fields_dict.linked_bills_html.$wrapper.html(`
+            <div class="it-linked-panel">
+              <div class="it-linked-panel__empty">
+                Linked bills will appear here once the record is saved.
+              </div>
+            </div>
+        `);
+        return;
+    }
+
+    frappe.call({
+        method: 'frappe_it.frappe_it.doctype.simcard_allocations.simcard_allocations.get_linked_bills_html',
+        args: { simcard_alloc_name: frm.doc.name },
+        callback: function(r) {
+            frm.fields_dict.linked_bills_html.$wrapper.html(r.message || '');
+        }
+    });
+}
