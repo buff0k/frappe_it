@@ -1,0 +1,32 @@
+{
+ "app": "frappe_it",
+ "creation": "2026-01-14 08:06:58.924385",
+ "docstatus": 0,
+ "doctype": "Desktop Icon",
+ "hidden": 0,
+ "icon": "support",
+ "icon_type": "Link",
+ "idx": 0,
+ "label": "IT",
+ "link_to": "IT",
+ "link_type": "Workspace Sidebar",
+ "logo_url": "/assets/frappe_it/images/is-logo.svg",
+ "modified": "2026-02-02 12:01:55.530046",
+ "modified_by": "eben@isambane.co.za",
+ "name": "IT",
+ "owner": "Administrator",
+ "restrict_removal": 0,
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "IT Manager"
+  },
+  {
+   "role": "IT User"
+  }
+ ],
+ "sidebar": "IT",
+ "standard": 1
+}
